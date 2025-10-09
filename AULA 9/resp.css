@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    gap: 1rem;
+}
+
+section{
+    border: 1px solid black;
+    padding: 1em;
+}
+
+footer{
+    text-align: center;
+}
