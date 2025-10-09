@@ -1,0 +1,15 @@
+section{
+    background-color: lightskyblue;
+    display: inline-block;
+    justify-content: center;
+    border-radius: 5px;
+}
+label[for]{
+    display: inline-block;
+    width:12rem;
+    vertical-align: top;
+
+}
+h1{
+    text-align: center;
+}
