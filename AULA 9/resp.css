@@ -5,11 +5,26 @@
 main{
     display: flex;
     gap: 1rem;
+    justify-content: center;
+    flex-wrap:wrap;
 }
 
 section{
     border: 1px solid black;
     padding: 1em;
+    flex-basis: 20%;
+}
+
+@media(max-width:1440px){
+    body{
+        background-color: burlywood;
+    }
+}
+
+@media(max-width:744px){
+    body{
+        background-color: rgb(255, 145, 2);
+    }
 }
 
 footer{
