@@ -1,0 +1,17 @@
+section{
+    padding: 3rem;
+    background-color: #dedede;
+    margin: 2rem;
+}
+
+section p{
+    animation-name: mostrar;
+    animation-duration: 2s;
+}
+
+@keyframes mostrar{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+}
