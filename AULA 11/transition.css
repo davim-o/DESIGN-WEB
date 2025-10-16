@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(198, 222, 241) !important;
+    /* comando que aumenta a importancia do produto com determinado valor */
+    background-color: blueviolet;
+}
+
+main{
+    display: flex;
+    gap:2rem;
+    justify-content: center;
+}
+
+section{
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid black;
+    padding: 2rem;
+    box-sizing: border-box;
+   
+    transition-duration: 1s;
+}
+
+section:hover{
+    box-shadow: 0 0 10px 0 gray;
+    border-radius: 20px;
+    background-color:  rgb(184, 216, 241);
+    /* efeito pra quando passa o mouse */
+}
+
+li{
+   display: inline-block;
+   margin-right: 4em;
+   font-size: 1.3em;
+   transition: all;
+   background-color:rgb(222, 235, 248) ;
+   box-shadow: 0 0 10px 0 gray;
+   color: black;
+
+
+}
+
+
