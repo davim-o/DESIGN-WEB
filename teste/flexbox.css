@@ -1,0 +1,39 @@
+body{
+    background-color: #27272a;
+}
+
+.container{
+    display: flex;
+
+    gap: 10px;/* separacao entre eles */
+    /* row-gap: ; */
+    /* column-gap: ; */
+
+    height:600px;
+
+    /* flex-direction: row;  */
+
+    flex-wrap: wrap; /* quebrar linha */
+
+    /* flex-flow:; (é uma jucao dos dois de cima) */
+
+    /* justify-content: center; */
+
+
+    background-color: #6366f1;
+
+}
+
+.item{
+    width: 200px;
+    height: 200px;
+    background-color: #38bdf8;
+    margin: 10px 10px 10px 10px;
+}
+
+.item-f{
+    /* align-self:alinha apenas um item; */
+    width: 660px;
+    /* order:muda a ordem do item; */
+    
+}
