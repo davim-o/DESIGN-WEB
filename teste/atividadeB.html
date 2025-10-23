@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .cabeca {
+            display: flex;
+            background-color: rgb(199, 188, 175);
+            height: 300px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .corpo {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            gap: 30px;
+            position: relative;
+            bottom: 2rem;
+
+        }
+
+        .itens {
+            display: flex;
+            background-color: rgb(27, 27, 68);
+            color: white;
+            width: 300px;
+            height: 200px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 2rem;
+            padding-right: 2rem;
+            padding-left: 2rem;
+
+
+        }
+
+        .pe {
+            display: flex;
+            flex-direction: column;
+            flex-flow: column wrap;
+            border: 1px solid black;
+            width: 60%;
+            gap: 0px 30px;
+
+        }
+
+        p {
+            margin: 10px;
+        }
+    </style>
+    <title>Flex</title>
+</head>
+
+<body>
+
+    <section class="cabeca">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat commodi harum iure, voluptatibus deleniti,
+            consequatur cupiditate ullam magnam, dolor debitis doloremque assumenda! Optio <br>tempora debitis quod rem
+            vero! Dolore, deleniti.</p>
+    </section>
+    <section class="corpo">
+        <!-- recebe os itens -->
+
+        <div class="itens">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, rerum harum possimus dolorem enim fuga
+                porro nulla .</p>
+        </div>
+        <div class="itens">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, rerum harum possimus dolorem enim fuga
+                porro nulla .</p>
+        </div>
+        <div class="itens">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, rerum harum possimus dolorem enim fuga
+                porro nulla .</p>
+        </div>
+
+        <!-- itens do contenier -->
+        </div>
+    </section>
+    <section class="pe">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ipsa nemo inventore recusandae assumenda
+            blanditiis suscipit rem totam praesentium saepe. A, voluptatum! Quas consequuntur perspiciatis explicabo
+            autem? Aspernatur, autem odit?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ipsa nemo inventore recusandae assumenda
+            blanditiis suscipit rem totam praesentium saepe. A, voluptatum! Quas consequuntur perspiciatis explicabo
+            autem? Aspernatur, autem odit?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ipsa nemo inventore recusandae assumenda
+            blanditiis suscipit rem totam praesentium saepe. A, voluptatum! Quas consequuntur perspiciatis explicabo
+            autem? Aspernatur, autem odit?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ipsa nemo inventore recusandae assumenda
+            blanditiis suscipit rem totam praesentium saepe. A, voluptatum! Quas consequuntur perspiciatis explicabo
+            autem? Aspernatur, autem odit?</p>
+    </section>
+</body>
+
+</html>
