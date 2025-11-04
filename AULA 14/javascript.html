@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+
+    <p id="mensagem"></p>
+    <script>
+
+   // document.getElementById("mensagem").innerHTML = " Olá mundo com getElementById ";
+    
+   //DOM - Modelo de documento do objeto
+   
+    </script>
+
+
+    <script>
+        /* 
+        - javascript n é java
+        - javascript é linguagem de programação lado cliente,geralmente
+        - javascript é interpretação (diferente de executada)
+        - javascript é sensivel a capitulação
+        - o desenvolvimento web é um tripe:
+               - html é a estrutura, conteudo 
+               - css é o estilo
+               - javascript é a interatividade, comportamento
+            - pode ser: lado cliente, servidor, mobile e desktop 
+
+        */
+
+  /* */
+    window.alert("olá MUNDO!");
+
+    document.write("<p> Olá mundo com documente write.</p>");
+    /*o ideal é colocar a tag tbm */
+    document.getElementById("mensagem").innerHTML = " Olá mundo com getElementById ";
+   // innerHTML = metodo que vai incluir o texto dentro do html com id... 
+
+     console.log("OLA MUNDO NO CONSOLE");
+     //variaveis 
+     // no js as variaveis não são 'fortemente tipadas'    
+     // pode usar var, let ou const
+     // var - declaração global
+     // let - declaração local e mais agil para o sistema
+
+     let numint = 3;
+     let text = "INFOWEB";
+     let numfloat = 5.8;
+     let booleano =true;
+ 
+  // o maos concatena
+     console.log(numint+numfloat+text);
+     console.log(54-98)
+     console.log(54*98)
+     console.log(54/98)
+     console.log("Valor de numint")
+     console.log(numint)
+     console.log(numint++) //incrementa depois
+     console.log(++numint) //incrementa antes
+     console.log(numint)
+
+     // OPERADORES RELACIONAIS
+
+    console.log(4==7);
+    console.log(4!=7);
+    console.log(4<=7);
+    console.log(4==4 && 5<=2); //and (se os dois forem verdadeiros)
+    console.log(4==5 || 10>5); //or (se só um for verdadeiro)
+    console.log("COMO FUNCIONA: ===");
+    console.log("3 === 3");
+    console.log("COMO FUNCIONA: ==");
+    console.log("3 === 3");
+
+    </script>
+      
+</body>
+</html>
