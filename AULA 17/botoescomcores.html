@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões</title>
+</head>
+<body>
+    <style>
+        button{
+            width: 10rem;
+            height: 10rem;
+            border: 1px solid white;
+            border-radius: 100%;
+            }
+    </style>
+
+    <script>
+        function fundo(r, g, b) {
+            document.body.style.background = `rgb(${r}, ${g}, ${b})`;
+        }
+        
+        function bola(){
+            red= Math.floor(Math.random()*255);
+            green= Math.floor(Math.random()*255);
+            blue=Math.floor(Math.random()*255);
+            document.write(`<button onclick="fundo(${red}, ${green}, ${blue})" style="background-color: rgb(${red}, ${green}, ${blue})"></button>`)   
+        }
+
+        for (let i = 0; i<100; i++){
+            bola()
+        }
+
+
+    </script>
+    
+</body>
+</html>

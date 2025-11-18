@@ -1,28 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <input type="text" id="texto" placeholder="Digite algo...">
-    <button onclick="mostrarTexto()">Mostrar</button>
-    <div class="resultado" id="resultado"></div>
+           <script>
+                // PASSO 1: função que muda o plano de fundo do body recebendo 3 parâmetros
+                function fundo(r, g, b) {
+                    document.body.style.background = `rgb(${r}, ${g}, ${b})`;
+                }
 
-    <script>
-      
-     function mostrarTexto() {
-        const texto = document.getElementById("texto").value;
-        const resultado = document.getElementById("resultado");
-        resultado.innerHTML = `
-            <p style="font-size:1rem">${texto}</p>
-            <p style="font-size:2rem">${texto}</p>
-            <p style="font-size:3rem">${texto}</p>
-            <p style="font-size:4rem">${texto}</p>
-            <p style="font-size:5rem">${texto}</p>
-        `;
-    }
-  </script>
-</body>
-</html>
+
+
+                for (let i = 0; i < 100; i++) {
+                    const red = Math.floor(Math.random() * 256);
+                    const green = Math.floor(Math.random() * 256);
+                    const blue = Math.floor(Math.random() * 256);
+
+                    const btn = document.createElement('button');
+                    btn.style.background = `rgb(${red}, ${green}, ${blue})`;
+                    btn.title = `rgb(${red}, ${green}, ${blue})`;
+                    // atribui onclick inline com 3 parâmetros numéricos
+                    btn.setAttribute('onclick', `changeBg(${red}, ${green}, ${blue})`);
+
+                    container.appendChild(btn);
+                }
+            </script>
+
+        </body>
+        </html>
