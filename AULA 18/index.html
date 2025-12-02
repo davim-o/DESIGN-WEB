@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D</title>
+</head>
+<body>
+    <script>
+    let nome = "INFOWEB";
+    console.log("Comprimento da string: "+name.length);
+    console.log("Posição do caracter da string: "+name.charAt(0));
+    console.log("Substitui strings: "+name.replace("INFO", "INFORMATICA PARA INTERNET"));
+    console.log("Divide a string: " +name.split("O") [0]);
+    console.log("Minúsculas:" +name.toLocaleLowerCase())
+
+    name= " INFOWEB"
+    console.log(name);
+    console.log("Remove os espaços" +name.trim());
+    console.log("Concatena strings" +name.concat("IFRN"));
+    console.log("Concatena strings" +name.trim("IFRN"));
+
+    console.log("Valor de PI:"+ Math.PI);
+    let num = 54.3;
+    console.log("Arredondar SEMPRE para cima: "+Math.ceil(num));
+    console.log("Arredondar SEMPRE para baixo: "+Math.floor(num));
+    console.log("Arredondamento padrão: "+Math.round(num));
+
+    const data = new Date();
+    console.log("Dia de hoje: "+data.getDate());
+    console.log("Dia da semana: "+data.getDay());
+    console.log("Mês: "+(data.getMonth()+1));
+    console.log(data.getFullYear());
+    console.log(data.getHours());
+    console.log(data.getMinutes());
+
+ 
+    function formatDate(d) {
+        const day = d.getDate();
+        const month = d.getFullYear();
+        const year = d.getFullYear();
+        return day + "/" + month + "/" + year;
+    }
+    console.log("Data formatada: " + formatDate(data));
+
+
+
+    function hora(){
+        let d = new Date();
+        document.getElementById("diahora").innerHTML = d.getSeconds();
+    }
+    setInterval(hora, 1000);
+
+    // PASSO 1: mostrar no console a data nesse formato: 25/11/2025
+    // PASSO 2: mostrar no console a data nesse formato: terça, 25/11/2025
+    // PASSO 3: mostrar no parágrafo: terça, 25 de novembro de 2025 - hh:mm:ss
+
+    </script>
+</body>
+</html>
